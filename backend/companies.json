@@ -1,0 +1,72 @@
+[
+    {
+        "id": "Company1",
+        "name": "Tech Innovators Inc.",
+        "industry": "Technology",
+        "location": "San Francisco, CA",
+        "employees": 500
+    },
+    {
+        "id": "Company2",
+        "name": "Health Solutions Ltd.",
+        "industry": "Healthcare",
+        "location": "New York, NY",
+        "employees": 300
+    },
+    {
+        "id": "Company3",
+        "name": "Eco Friendly Products",
+        "industry": "Retail",
+        "location": "Austin, TX",
+        "employees": 150
+    },
+    {
+        "id": "Company4",
+        "name": "Global Finance Corp.",
+        "industry": "Finance",
+        "location": "Chicago, IL",
+        "employees": 1000
+    },
+    {
+        "id": "Company5",
+        "name": "Creative Media Group",
+        "industry": "Media",
+        "location": "Los Angeles, CA",
+        "employees": 200
+    },
+    {
+        "id": "Company6",
+        "name": "Innovative Tech Solutions",
+        "industry": "Technology",
+        "location": "Seattle, WA",
+        "employees": 750
+    },
+    {
+        "id": "Company7",
+        "name": "Apple Inc.",
+        "industry": "Technology",
+        "location": "Cupertino, CA",
+        "employees": 147000
+    },
+    {
+        "id": "Company8",
+        "name": "Google LLC",
+        "industry": "Technology",
+        "location": "Mountain View, CA",
+        "employees": 156500
+    },
+    {
+        "id": "Company9",
+        "name": "Amazon.com Inc.",
+        "industry": "E-commerce",
+        "location": "Seattle, WA",
+        "employees": 1300000
+    },
+    {
+        "id": "Company10",
+        "name": "Microsoft Corporation",
+        "industry": "Technology",
+        "location": "Redmond, WA",
+        "employees": 181000
+    }
+]
