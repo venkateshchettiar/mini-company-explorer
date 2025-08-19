@@ -52,14 +52,25 @@ function SearchPage() {
 
   return (
     <div className="search-page">
-      {/* Background gradient */}
-      <div className="background-gradient"></div>
-      <div className="background-texture"></div>
+      {/* Particle system for enhanced visual appeal */}
+      <div className="particles">
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+        <div className="particle"></div>
+      </div>
 
-      {/* Top left decorative element - pencils */}
-      <div className="pencils-container">
-        <div className="pencil pencil-1"></div>
-        <div className="pencil pencil-2"></div>
+      {/* Decorative floating elements */}
+      <div className="decorative-elements">
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
       </div>
 
       <div className="main-content">
@@ -73,12 +84,12 @@ function SearchPage() {
           </div>
         </section>
 
-        {/* Search Interface - OMNIBLE Style */}
+        {/* Search Interface - Modern Style */}
         <section className="search-section">
           <div className="search-container">
             <div className="search-form">
               <form onSubmit={handleSearch}>
-                {/* Search Bar and Button - Inline like OMNIBLE */}
+                {/* Search Bar and Button */}
                 <div className="search-input-container">
                   <div className="search-input-wrapper">
                     <input
@@ -106,7 +117,7 @@ function SearchPage() {
                           <span>Searching...</span>
                         </div>
                       ) : (
-                        "GO"
+                        <span>GO</span>
                       )}
                     </button>
                   </div>
@@ -120,26 +131,9 @@ function SearchPage() {
         {error && (
           <section className="error-section">
             <div className="error-container">
-              <div className="error-message">
-                <div className="error-header">
-                  <div className="error-icon">
-                    <svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <span className="error-title">Search Error</span>
-                </div>
+              <div className="error-card">
+                <div className="emoji-icon">⚠️</div>
+                <h3 className="error-title">Search Error</h3>
                 <p className="error-text">{error}</p>
               </div>
             </div>
@@ -166,11 +160,11 @@ function SearchPage() {
                   {companies.map((company) => (
                     <div
                       key={company.id}
-                      className="company-card"
+                      className="company-card magnetic"
                       onClick={() => handleCompanyClick(company.id)}
                     >
                       {/* Company info */}
-                      <div>
+                      <div className="company-info">
                         <h4 className="company-name">{company.name}</h4>
                         <div className="company-industry">
                           🏢 {company.industry}
@@ -233,7 +227,7 @@ function SearchPage() {
             </section>
           )}
 
-        {/* Footer/Location Section - Like OMNIBLE */}
+        {/* Footer/Location Section */}
         <section className="footer-section">
           <div className="footer-container">
             <div className="footer-divider">
@@ -253,7 +247,9 @@ function SearchPage() {
                     Search powered by Company Explorer
                   </span>
                 </div>
-                <button className="about-button">ABOUT US</button>
+                <button className="about-button magnetic">
+                  <span>ABOUT US</span>
+                </button>
               </div>
             </div>
           </div>

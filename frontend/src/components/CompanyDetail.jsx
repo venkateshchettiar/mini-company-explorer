@@ -68,8 +68,8 @@ function CompanyDetail() {
               <div className="error-emoji">⚠️</div>
               <h3 className="error-title">Oops! Something went wrong</h3>
               <p className="error-text">{error}</p>
-              <button onClick={handleBack} className="error-button">
-                ← Back to Search
+              <button onClick={handleBack} className="error-button magnetic">
+                <span>← Back to Search</span>
               </button>
             </div>
           </div>
@@ -89,8 +89,8 @@ function CompanyDetail() {
               <p className="not-found-text">
                 The company you're looking for doesn't exist in our database.
               </p>
-              <button onClick={handleBack} className="error-button">
-                ← Back to Search
+              <button onClick={handleBack} className="error-button magnetic">
+                <span>← Back to Search</span>
               </button>
             </div>
           </div>
@@ -110,7 +110,7 @@ function CompanyDetail() {
             <div className="company-header-bg-2"></div>
 
             {/* Back Button */}
-            <button onClick={handleBack} className="back-button">
+            <button onClick={handleBack} className="back-button magnetic">
               <svg
                 width="24"
                 height="24"
@@ -125,20 +125,22 @@ function CompanyDetail() {
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
-              Back to Search
+              <span>Back to Search</span>
             </button>
 
             {/* Company Header */}
             <div className="company-header-content">
-              <div className="company-avatar">{company.name.charAt(0)}</div>
+              <div className="company-avatar magnetic">
+                {company.name.charAt(0)}
+              </div>
               <div className="company-info">
                 <h2 className="company-name-large">{company.name}</h2>
                 <div className="company-tags">
-                  <span className="company-tag company-tag-industry">
+                  <span className="company-tag company-tag-industry magnetic">
                     🏢 {company.industry}
                   </span>
                   {company.location && (
-                    <span className="company-tag company-tag-location">
+                    <span className="company-tag company-tag-location magnetic">
                       📍 {company.location}
                     </span>
                   )}
@@ -166,7 +168,7 @@ function CompanyDetail() {
 
               <div className="company-stats-grid">
                 {company.employees && (
-                  <div className="stat-card">
+                  <div className="stat-card magnetic">
                     <div className="stat-emoji">👥</div>
                     <div className="stat-value stat-value-employees">
                       {company.employees.toLocaleString()}
@@ -177,7 +179,7 @@ function CompanyDetail() {
                 )}
 
                 {company.founded_year && (
-                  <div className="stat-card">
+                  <div className="stat-card magnetic">
                     <div className="stat-emoji">🎂</div>
                     <div className="stat-value stat-value-founded">
                       {company.founded_year}
@@ -187,7 +189,7 @@ function CompanyDetail() {
                   </div>
                 )}
 
-                <div className="stat-card">
+                <div className="stat-card magnetic">
                   <div className="stat-emoji">🏢</div>
                   <div className="stat-value stat-value-industry">
                     {company.industry}
@@ -197,7 +199,7 @@ function CompanyDetail() {
                 </div>
 
                 {company.location && (
-                  <div className="stat-card">
+                  <div className="stat-card magnetic">
                     <div className="stat-emoji">📍</div>
                     <div className="stat-value stat-value-location">
                       {company.location}
@@ -237,14 +239,14 @@ function CompanyDetail() {
       <section className="action-buttons-section">
         <div className="action-buttons-container">
           <div className="action-buttons-row">
-            <button onClick={handleBack} className="action-button-secondary">
-              ← Back to Search
+            <button onClick={handleBack} className="action-button-secondary magnetic">
+              <span>← Back to Search</span>
             </button>
             <button
               onClick={() => window.location.reload()}
-              className="action-button-primary"
+              className="action-button-primary magnetic"
             >
-              🔄 Refresh Data
+              <span>🔄 Refresh Data</span>
             </button>
           </div>
         </div>
