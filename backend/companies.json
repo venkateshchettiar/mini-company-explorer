@@ -1,72 +1,92 @@
 [
-    {
-        "id": "Company1",
-        "name": "Tech Innovators Inc.",
-        "industry": "Technology",
-        "location": "San Francisco, CA",
-        "employees": 500
-    },
-    {
-        "id": "Company2",
-        "name": "Health Solutions Ltd.",
-        "industry": "Healthcare",
-        "location": "New York, NY",
-        "employees": 300
-    },
-    {
-        "id": "Company3",
-        "name": "Eco Friendly Products",
-        "industry": "Retail",
-        "location": "Austin, TX",
-        "employees": 150
-    },
-    {
-        "id": "Company4",
-        "name": "Global Finance Corp.",
-        "industry": "Finance",
-        "location": "Chicago, IL",
-        "employees": 1000
-    },
-    {
-        "id": "Company5",
-        "name": "Creative Media Group",
-        "industry": "Media",
-        "location": "Los Angeles, CA",
-        "employees": 200
-    },
-    {
-        "id": "Company6",
-        "name": "Innovative Tech Solutions",
-        "industry": "Technology",
-        "location": "Seattle, WA",
-        "employees": 750
-    },
-    {
-        "id": "Company7",
-        "name": "Apple Inc.",
-        "industry": "Technology",
-        "location": "Cupertino, CA",
-        "employees": 147000
-    },
-    {
-        "id": "Company8",
-        "name": "Google LLC",
-        "industry": "Technology",
-        "location": "Mountain View, CA",
-        "employees": 156500
-    },
-    {
-        "id": "Company9",
-        "name": "Amazon.com Inc.",
-        "industry": "E-commerce",
-        "location": "Seattle, WA",
-        "employees": 1300000
-    },
-    {
-        "id": "Company10",
-        "name": "Microsoft Corporation",
-        "industry": "Technology",
-        "location": "Redmond, WA",
-        "employees": 181000
-    }
+  {
+    "id": "Company1",
+    "name": "Tech Innovators Inc.",
+    "industry": "Technology",
+    "location": "San Francisco, CA",
+    "employees": 500,
+    "founded_year": 2010,
+    "description": "Tech Innovators Inc. is a cutting-edge technology company specializing in artificial intelligence and machine learning solutions. We help businesses transform their operations through innovative software solutions."
+  },
+  {
+    "id": "Company2",
+    "name": "Health Solutions Ltd.",
+    "industry": "Healthcare",
+    "location": "New York, NY",
+    "employees": 300,
+    "founded_year": 2005,
+    "description": "Health Solutions Ltd. provides comprehensive healthcare management systems and telemedicine solutions. Our platform connects patients with healthcare providers seamlessly."
+  },
+  {
+    "id": "Company3",
+    "name": "Eco Friendly Products",
+    "industry": "Retail",
+    "location": "Austin, TX",
+    "employees": 150,
+    "founded_year": 2018,
+    "description": "Eco Friendly Products is committed to sustainable retail solutions. We offer environmentally conscious products that help reduce our carbon footprint while maintaining quality."
+  },
+  {
+    "id": "Company4",
+    "name": "Global Finance Corp.",
+    "industry": "Finance",
+    "location": "Chicago, IL",
+    "employees": 1000,
+    "founded_year": 1995,
+    "description": "Global Finance Corp. is a leading financial services company providing investment banking, wealth management, and corporate finance solutions to clients worldwide."
+  },
+  {
+    "id": "Company5",
+    "name": "Creative Media Group",
+    "industry": "Media",
+    "location": "Los Angeles, CA",
+    "employees": 200,
+    "founded_year": 2012,
+    "description": "Creative Media Group produces high-quality digital content, including videos, podcasts, and interactive media. We help brands tell their stories effectively."
+  },
+  {
+    "id": "Company6",
+    "name": "Innovative Tech Solutions",
+    "industry": "Technology",
+    "location": "Seattle, WA",
+    "employees": 750,
+    "founded_year": 2008,
+    "description": "Innovative Tech Solutions develops enterprise software solutions for businesses of all sizes. Our products streamline operations and improve productivity."
+  },
+  {
+    "id": "Company7",
+    "name": "Apple Inc.",
+    "industry": "Technology",
+    "location": "Cupertino, CA",
+    "employees": 147000,
+    "founded_year": 1976,
+    "description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. We're known for innovation and design excellence."
+  },
+  {
+    "id": "Company8",
+    "name": "Google LLC",
+    "industry": "Technology",
+    "location": "Mountain View, CA",
+    "employees": 156500,
+    "founded_year": 1998,
+    "description": "Google LLC provides online advertising services, cloud computing services, software, and hardware. We organize the world's information and make it universally accessible."
+  },
+  {
+    "id": "Company9",
+    "name": "Amazon.com Inc.",
+    "industry": "E-commerce",
+    "location": "Seattle, WA",
+    "employees": 1300000,
+    "founded_year": 1994,
+    "description": "Amazon.com Inc. engages in the retail sale of consumer products and subscriptions in North America and internationally. We're the world's largest online retailer."
+  },
+  {
+    "id": "Company10",
+    "name": "Microsoft Corporation",
+    "industry": "Technology",
+    "location": "Redmond, WA",
+    "employees": 181000,
+    "founded_year": 1975,
+    "description": "Microsoft Corporation develops, licenses, and supports software, services, devices, and solutions worldwide. We're a leader in personal computing and business software."
+  }
 ]

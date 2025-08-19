@@ -2,52 +2,51 @@
 
 # Mini Company Explorer
 
-A simple React + Flask app to test basic front-end skills.
+A modern React + Flask application for exploring company information with a beautiful Tailwind CSS interface.
 
----
+## 🎯 Features
 
-## 🎯 Objective
-
-Create a front-end React app that:
-- Lets users search for companies
-- Lists search results
-- Shows details of a selected company
-
-The basic look and feel of the search page and the company
-information page can be found in the samples directory.
-
----
+- **Search Companies**: Search for companies by name with real-time results
+- **Company Details**: View comprehensive information about selected companies
+- **Responsive Design**: Mobile-first design that works on all devices
+- **Modern UI**: Beautiful interface built with Tailwind CSS
+- **Real-time Search**: Instant search results as you type
 
 ## 🛠 Tech Stack
 
-- Frontend: React (via Vite)
-- Backend: Flask (Python 3)
-
----
+- **Frontend**: React 19 + Vite + Tailwind CSS
+- **Backend**: Flask (Python 3) + CORS support
+- **Routing**: React Router for navigation
+- **Styling**: Tailwind CSS for modern, responsive design
 
 ## 🚀 Getting Started
 
-### 1. Clone the repo
+### Prerequisites
+
+- Node.js (v18 or higher)
+- Python 3.8+
+- npm or yarn
+
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourname/mini-company-explorer.git
+git clone <your-repo-url>
 cd mini-company-explorer
 ```
 
-### 2. Start the backend
+### 2. Start the Backend
 
 ```bash
 cd backend
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r ../requirements.txt
 python app.py
 ```
 
-The backend runs at:  
-**http://127.0.0.1:5000**
+The backend will run at: http://127.0.0.1:5000
 
-### 3. Start the frontend
+### 3. Start the Frontend
 
 ```bash
 cd frontend
@@ -55,55 +54,63 @@ npm install
 npm run dev
 ```
 
-The frontend runs at:  
-**http://localhost:5173**
+The frontend will run at: http://localhost:5173
 
----
+## 📱 Usage
 
-## 🧪 What You Need to Build (Frontend)
+1. **Search Page**: Enter a company name in the search box and click "Search"
+2. **Results**: View matching companies in a responsive grid
+3. **Company Details**: Click on any company card to view detailed information
+4. **Navigation**: Use the back button to return to search results
 
-1. **Search Page**
-   - A text input + search button
-   - List of companies matching the query
+## 🎨 Design Features
 
-2. **Detail Page**
-   - Shows detailed info for the selected company
+- **Gradient Header**: Beautiful blue-to-purple gradient header
+- **Card-based Layout**: Clean, modern card design for company information
+- **Hover Effects**: Smooth animations and hover states
+- **Responsive Grid**: Adapts to different screen sizes
+- **Modern Typography**: Clean, readable text with proper hierarchy
 
-3. **Routing**
-   - Use React Router or a similar library to manage views
+## 🔧 API Endpoints
 
-4. **Optional Features (Bonus)**
-   - Loading and error handling
-   - Clean styling using CSS or a UI framework (e.g., Bootstrap or Tailwind)
-   - Modular component design
+- `GET /api/companies?q=term` - Search companies by name
+- `GET /api/companies/<id>` - Get detailed company information
 
----
+## 📁 Project Structure
 
-## 📬 API Endpoints
+```
+mini-company-explorer/
+├── backend/
+│   ├── app.py              # Flask backend server
+│   ├── companies.json      # Company data
+│   └── requirements.txt    # Python dependencies
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── SearchPage.jsx      # Search interface
+│   │   │   └── CompanyDetail.jsx   # Company details view
+│   │   ├── App.jsx                 # Main app component
+│   │   └── main.jsx                # App entry point
+│   ├── package.json                # Node.js dependencies
+│   └── tailwind.config.js          # Tailwind CSS configuration
+└── README.md
+```
 
-### `GET /api/companies?q=term`
-- **Description:** Search for companies matching the query string.
-- **Returns:** List of `{ id, name, industry }`
+## 🌟 Bonus Features
 
-### `GET /api/companies/<id>`
-- **Description:** Get full details of a single company by ID.
-- **Returns:** `{ id, name, industry, description, founded_year, location }`
+- Loading states and error handling
+- Responsive design for mobile and desktop
+- Smooth transitions and animations
+- Clean, modular component architecture
+- Professional UI/UX design
 
----
+## 🚀 Deployment
 
-## 📦 Submission Instructions
+The app is ready for deployment on platforms like:
 
-- Fork this repository
-- Complete your implementation
-- Push to your forked repo
-- Share the link with us
+- **Frontend**: Vercel, Netlify, or any static hosting
+- **Backend**: Heroku, Railway, or any Python hosting service
 
----
+## 📝 License
 
-## ✅ Evaluation Criteria
-
-- Correctness of functionality
-- Code readability and structure
-- Use of React best practices
-- API integration
-- Bonus: UI/UX polish and extra effort
+This project is open source and available under the MIT License.
